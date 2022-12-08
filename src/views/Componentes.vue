@@ -18,6 +18,10 @@
         </v-card-text>
       </v-card>
     </v-col>
+    <v-col cols="4">
+      <v-img :src="image" max-height="450px" />
+      <div class="text-caption text-center">Figura 2: Docker</div>
+    </v-col>
   </v-row>
   <v-row justify="center">
     <v-col cols="4">
@@ -82,3 +86,7 @@
     </v-col>
   </v-row>
 </template>
+
+<script setup>
+import image from '../assets/componentes.webp'
+</script>
