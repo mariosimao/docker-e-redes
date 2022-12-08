@@ -84,8 +84,7 @@ const navItems = [
   { title: 'None (Nenhum)', props: { prependIcon: 'mdi-close-network', to: '/none' } },
   { title: 'Overlay', props: { prependIcon: 'mdi-router-network', to: '/overlay' } },
   { title: 'OUTROS', type: 'subheader' },
-  { title: 'Conclusão', props: { prependIcon: 'mdi-thought-bubble', to: '/conclusao' } },
-  { title: 'FAQ', props: { prependIcon: 'mdi-help-circle', to: '/faq' } },
+  { title: 'Conclusão & FAQ', props: { prependIcon: 'mdi-help-circle', to: '/conclusao' } },
   { title: 'Referências', props: { prependIcon: 'mdi-library', to: '/referencias' } },
 ];
 

@@ -9,7 +9,6 @@ import Host from '../views/Host.vue';
 import None from '../views/None.vue';
 import Overlay from '../views/Overlay.vue';
 import Conclusao from '../views/Conclusao.vue';
-import Faq from '../views/Faq.vue';
 import Referencias from '../views/Referencias.vue';
 
 const routes = [
@@ -22,7 +21,6 @@ const routes = [
   { path: '/none',         name: 'none',        component: None        },
   { path: '/overlay',      name: 'overlay',     component: Overlay     },
   { path: '/conclusao',    name: 'conclusao',   component: Conclusao   },
-  { path: '/faq',          name: 'faq',         component: Faq         },
   { path: '/referencias',  name: 'referencias', component: Referencias },
 ];
 
