@@ -19,7 +19,7 @@
   <v-row justify="center">
     <v-col>
       <v-img :src="image" max-height="450px" />
-      <div class="text-caption text-center">Figura 6: Configuração do driver de rede do tipo host.</div>
+      <div class="text-caption text-center">Figura 7: Configuração do driver de rede do tipo host.</div>
     </v-col>
   </v-row>
 </template>
