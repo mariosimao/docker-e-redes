@@ -3,7 +3,8 @@
     <v-col cols="4">
       <v-card prepend-icon="mdi-lan" title="Drivers de Rede">
         <template v-slot:prepend>
-          <v-icon size="x-large" color="primary" />
+          <v-icon size="x-large"
+          class="mx-3" color="primary" />
         </template>
         <v-card-text>
           <div class="text-h4">
@@ -21,47 +22,53 @@
         </v-card-text>
       </v-card>
     </v-col>
-  </v-row>
-  <v-row align-content="center" align="center" justify="center">
-    <v-col cols="12" class="d-flex justify-center align-center">
+    <v-col cols="12" align="center">
       <v-btn
         to="/bridge"
         prepend-icon="mdi-bridge"
         color="primary"
         size="x-large"
+        class="mx-3"
       >
         Bridge
       </v-btn>
-    </v-col>
-    <v-col cols="12" class="d-flex justify-center align-center">
       <v-btn
         to="/host"
         prepend-icon="mdi-network"
         color="primary"
         size="x-large"
+        class="mx-3"
       >
         Host
       </v-btn>
-    </v-col>
-    <v-col cols="12" class="d-flex justify-center align-center">
       <v-btn
         to="/none"
         prepend-icon="mdi-close-network"
         color="primary"
         size="x-large"
+        class="mx-3"
       >
         None
       </v-btn>
-    </v-col>
-    <v-col cols="12" class="d-flex justify-center align-center">
       <v-btn
         to="/overlay"
         prepend-icon="mdi-router-network"
         color="primary"
         size="x-large"
+        class="mx-3"
       >
         Overlay
       </v-btn>
     </v-col>
   </v-row>
+  <v-row align-content="center" align="center" justify="center">
+    <v-col cols="5">
+      <v-img :src="image" />
+      <div class="text-caption text-center">Figura 3: Drivers de Rede</div>
+    </v-col>
+  </v-row>
 </template>
+
+<script setup>
+import image from '@/assets/drivers.webp'
+</script>
