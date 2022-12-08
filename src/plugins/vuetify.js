@@ -5,6 +5,26 @@ import 'vuetify/styles'
 // Vuetify
 import { createVuetify } from 'vuetify'
 
-export default createVuetify(
-  // https://vuetifyjs.com/en/introduction/why-vuetify/#feature-guides
-)
+const lightTheme = {
+	dark: false,
+	colors: {
+		primary: '#0f4c81',
+	},
+};
+
+const darkTheme = {
+	dark: true,
+	colors: {
+		primary: '#0f4c81',
+	},
+};
+
+export default createVuetify({
+	theme: {
+		defaultTheme: 'lightTheme',
+		themes: {
+			lightTheme,
+      darkTheme,
+		},
+	},
+});
