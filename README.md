@@ -1,6 +1,8 @@
 <h1 align="center">Docker e Redes</h1>
 <p align="center">
-  <img src="./screenshot.png" width="700">
+  <a href="https://mario.engineering/docker-e-redes" target="_blank">
+    <img src="./screenshot.png" width="700">
+  </a>
 </p>
 
 Website built during the "Computer Networks II" course.
