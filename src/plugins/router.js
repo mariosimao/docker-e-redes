@@ -1,15 +1,15 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
-import Inicio from '../views/Inicio.vue';
-import SobreDocker from '../views/SobreDocker.vue';
-import Componentes from '../views/Componentes.vue';
-import Drivers from '../views/Drivers.vue';
-import Bridge from '../views/Bridge.vue';
-import Host from '../views/Host.vue';
-import None from '../views/None.vue';
-import Overlay from '../views/Overlay.vue';
-import Conclusao from '../views/Conclusao.vue';
-import Referencias from '../views/Referencias.vue';
+import Inicio from '../views/InicioView.vue';
+import SobreDocker from '../views/SobreDockerView.vue';
+import Componentes from '../views/ComponentesView.vue';
+import Drivers from '../views/DriversView.vue';
+import Bridge from '../views/BridgeView.vue';
+import Host from '../views/HostView.vue';
+import None from '../views/NoneView.vue';
+import Overlay from '../views/OverlayView.vue';
+import Conclusao from '../views/ConclusaoView.vue';
+import Referencias from '../views/ReferenciasView.vue';
 
 const routes = [
   { path: '/',             name: 'inicio',      component: Inicio      },
@@ -26,7 +26,7 @@ const routes = [
 
 export default createRouter({
 	history: createWebHashHistory('/docker-e-redes/'),
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     // always scroll to top
     return { top: 0 }
   },
