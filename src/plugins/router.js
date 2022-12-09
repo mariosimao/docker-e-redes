@@ -25,6 +25,6 @@ const routes = [
 ];
 
 export default createRouter({
-	history: createWebHashHistory(),
+	history: createWebHashHistory('/docker-e-redes/'),
 	routes,
 });
