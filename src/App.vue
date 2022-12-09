@@ -8,12 +8,8 @@
         <v-app-bar-nav-icon @click="drawer = !drawer" />
       </template>
       <v-app-bar-title>
-        <!-- <v-icon start>mdi-docker</v-icon> -->
-        Docker e Redes
+        <RouterLink to="/" class="text-decoration-none text-white">Docker e Redes</RouterLink>
       </v-app-bar-title>
-      <!-- <template v-slot:append>
-        <v-btn>Teste</v-btn>
-      </template> -->
     </v-app-bar>
 
     <v-navigation-drawer
@@ -25,30 +21,10 @@
     >
       <div v-if="!mobile">
         <div class="px-4 py-3 text-center">
-          <p>Docker e Redes</p>
+          <RouterLink to="/" class="text-decoration-none text-white">Docker e Redes</RouterLink>
         </div>
-
         <v-divider />
       </div>
-
-      <!-- <v-list nav>
-        <v-list-subheader>INTRODUÇÂO</v-list-subheader>
-        <v-list-item title="O que é Docker" prepend-icon="mdi-docker" to="/introducao" />
-        <v-list-item title="Componentes" prepend-icon="mdi-power-plug" />
-
-        <v-list-subheader>REDES</v-list-subheader>
-        <v-list-item title="Drivers" prepend-icon="mdi-lan" />
-        <v-list-item title="Bridge (Ponte)" prepend-icon="mdi-bridge" />
-        <v-list-item title="Host" prepend-icon="mdi-home" />
-        <v-list-item title="None (Nenhum)" prepend-icon="mdi-close-network" />
-        <v-list-item title="Overlay" prepend-icon="mdi-router-network" />
-
-        <v-list-subheader>OUTROS</v-list-subheader>
-        <v-list-item title="Conclusão" prepend-icon="mdi-thought-bubble" />
-        <v-list-item title="FAQ" prepend-icon="mdi-help-circle" />
-        <v-list-item title="Bibliografia" prepend-icon="mdi-library" />
-      </v-list> -->
-
       <v-list
         :items="navItems"
         nav
@@ -56,9 +32,10 @@
     </v-navigation-drawer>
 
     <v-main>
-      <v-container :class="['bg-grey-lighten-3', 'fill-height', mobile ? 'pa-5' : 'pa-7']">
+      <v-container :class="['bg-grey-lighten-3', 'fill-height', mobile ? 'px-3 py-7' : 'pa-7']">
         <router-view />
       </v-container>
+      <AuthorshipNote />
       <BottomNavigation />
     </v-main>
   </v-app>
@@ -68,6 +45,7 @@
 import { ref } from '@vue/reactivity';
 import { useDisplay } from 'vuetify';
 import BottomNavigation from './components/BottomNavigation.vue';
+import AuthorshipNote from './components/AuthorshipNote.vue';
 
 const { mobile } = useDisplay();
 
