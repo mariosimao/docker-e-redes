@@ -1,6 +1,6 @@
 <template>
   <v-row class="mb-5" justify="center">
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-power-plug" title="Componentes">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -18,13 +18,13 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-img :src="image" max-height="450px" />
       <div class="text-caption text-center">Figura 2: Docker</div>
     </v-col>
   </v-row>
   <v-row justify="center">
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-server" title="Servidor Docker">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -39,7 +39,7 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-image" title="Imagens">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -56,7 +56,7 @@
     </v-col>
   </v-row>
   <v-row justify="center">
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-cube" title="Containers">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -70,7 +70,7 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-cloud" title="Registro">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />

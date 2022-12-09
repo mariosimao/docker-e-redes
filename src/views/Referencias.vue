@@ -6,7 +6,7 @@
           <v-icon size="x-large" color="primary" />
         </template>
         <v-card-text>
-          <v-table>
+          <v-table density="comfortable">
             <thead>
               <tr>
                 <th class="text-left">Título</th>

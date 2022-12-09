@@ -1,10 +1,9 @@
 <template>
-  <v-row class="mb-5" justify="center">
-    <v-col cols="4">
+  <v-row class="mb-3" justify="center">
+    <v-col md="4">
       <v-card prepend-icon="mdi-lan" title="Drivers de Rede">
         <template v-slot:prepend>
-          <v-icon size="x-large"
-          class="mx-3" color="primary" />
+          <v-icon size="x-large" class="mx-3" color="primary" />
         </template>
         <v-card-text>
           <div class="text-h4">
@@ -22,13 +21,13 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="12" align="center">
+    <v-col cols="12" :class="['d-flex', 'justify-center', mobile ? 'flex-column' : '']">
       <v-btn
         to="/bridge"
         prepend-icon="mdi-bridge"
         color="primary"
         size="x-large"
-        class="mx-3"
+        :class="mobile ? 'my-2' : 'mx-3'"
       >
         Bridge
       </v-btn>
@@ -37,7 +36,7 @@
         prepend-icon="mdi-network"
         color="primary"
         size="x-large"
-        class="mx-3"
+        :class="mobile ? 'my-2' : 'mx-3'"
       >
         Host
       </v-btn>
@@ -46,7 +45,7 @@
         prepend-icon="mdi-close-network"
         color="primary"
         size="x-large"
-        class="mx-3"
+        :class="mobile ? 'my-2' : 'mx-3'"
       >
         None
       </v-btn>
@@ -55,14 +54,14 @@
         prepend-icon="mdi-router-network"
         color="primary"
         size="x-large"
-        class="mx-3"
+        :class="mobile ? 'my-2' : 'mx-3'"
       >
         Overlay
       </v-btn>
     </v-col>
   </v-row>
-  <v-row align-content="center" align="center" justify="center">
-    <v-col cols="5">
+  <v-row justify="center">
+    <v-col md="5">
       <v-img :src="image" />
       <div class="text-caption text-center">Figura 3: Drivers de Rede</div>
     </v-col>
@@ -71,4 +70,7 @@
 
 <script setup>
 import image from '@/assets/drivers.webp'
+import { useDisplay } from 'vuetify';
+
+const { mobile } = useDisplay();
 </script>

@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center" class="mb-10">
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-bridge" title="Bridge (Ponte)">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -17,17 +17,17 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-img :src="image1" max-height="450px" />
       <div class="text-caption text-center">Figura 4: Configuração de containers conectados em ponte.</div>
     </v-col>
   </v-row>
   <v-row justify="center">
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-img :src="image2" max-height="450px" />
       <div class="text-caption text-center">Figura 5: Mapeamento de portas de containers para portas do host.</div>
     </v-col>
-    <v-col cols="4">
+    <v-col cols="12" md="4">
       <v-card>
         <v-card-text>
           <div class="card-paragraph">

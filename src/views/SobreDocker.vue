@@ -1,6 +1,6 @@
 <template>
   <v-row class="mb-5">
-    <v-col>
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-docker" title="O que é Docker?">
         <template v-slot:prepend>
           <v-icon size="x-large" color="primary" />
@@ -17,7 +17,7 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col>
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-thumb-up" title="Quando usar?">
         <template v-slot:prepend>
           <v-icon size="x-large" color="green" />
@@ -36,7 +36,7 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col>
+    <v-col cols="12" md="4">
       <v-card prepend-icon="mdi-thumb-down" title="Desvantagens">
         <template v-slot:prepend>
           <v-icon size="x-large" color="red" />

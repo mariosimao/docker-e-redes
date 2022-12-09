@@ -18,8 +18,9 @@
 
     <v-navigation-drawer
       v-model="drawer"
-      theme="darkTheme"
-      color="primary"
+      :absolute="!mobile"
+      :theme="mobile ? 'default' :'darkTheme'"
+      :color="mobile ? 'light' : 'primary'"
       :temporary="mobile"
     >
       <div v-if="!mobile">
@@ -51,12 +52,11 @@
       <v-list
         :items="navItems"
         nav
-        theme="dark"
       />
     </v-navigation-drawer>
 
     <v-main>
-      <v-container class="pa-7 bg-grey-lighten-3 fill-height">
+      <v-container :class="['bg-grey-lighten-3', 'fill-height', mobile ? 'pa-5' : 'pa-7']">
         <router-view />
       </v-container>
       <BottomNavigation />
