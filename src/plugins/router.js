@@ -26,5 +26,9 @@ const routes = [
 
 export default createRouter({
 	history: createWebHashHistory('/docker-e-redes/'),
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  },
 	routes,
 });
