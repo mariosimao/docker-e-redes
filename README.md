@@ -3,7 +3,7 @@
   <img src="./screenshot.png" width="700">
 </p>
 
-Website building during the "Computer Networks II" course.
+Website built during the "Computer Networks II" course.
 
 https://mario.engineering/docker-e-redes
 
